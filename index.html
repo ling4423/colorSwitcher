@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper || Simple</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button>Switch Color</button>
+    <script type ="text/javascript">
+        var color = ["#a3dee6", "#fda553HEX", "#feac00","#fee7d5","#feac00"];
+        var i =0;
+        //document.querySelector() is for return the first element. it goes with the button
+        //addEventListener() sets up a function that will be called whenever the specified event is delivered 
+        //to the target.
+        document.querySelector("button").addEventListener("click",
+            function(){
+            i = i < color.length ? ++i : 0;
+        document.querySelector("body").style.background = color[i]
+        })
+        //The background property sets or returns up to eight separate background properties, in a shorthand form.
+    </script>
+  </body>
+</html>
